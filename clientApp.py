@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import os
 from flask_cors import CORS, cross_origin
-from OCRAI.utils import decodeImage
+from utils import decodeImage
 from predict import ocr
 
 os.putenv('LANG', 'en_US.UTF-8')
